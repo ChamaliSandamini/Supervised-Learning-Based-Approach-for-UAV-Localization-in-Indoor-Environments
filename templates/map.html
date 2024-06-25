@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block head %} 
+
+    <title>AirMapper Indoor</title>
+    
+{% endblock head %}
+
+{% block body %}
+<body>
+    <div>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div>
+        <br>
+        <h1 style="text-align:center; font-size:80px;">AirMapper Indoor</h1>
+        <br>
+        <h6 b >LOCALIZATION OF UAVS
+            <br> IN INDOOR ENVIRONMENTS 
+            <br>WITH MACHINE LEARNING TECHNIQUES
+        </h6>
+    </div>
+
+    <br><br><br><br>
+    
+    <section>
+        <div>
+            <div class="right-column">
+                <p style="font-size:30px;">______Floor plan______</p>
+                <img src="{{ url_for('static', filename='secondFloor.png') }}" class="image"></image>
+            </div>
+            <div class="left-column">
+                <article>
+                    <p style="font-size:30px; text-align:left;">
+                        1 - LT A   <br>
+                        2 - LT B  <br>
+                        3 - Open area <br>
+                        4 - CCNA lab <br>
+                        5 - LT C <br>
+                        6 - QA room <br>
+                        7 - Com Eng Lab <br>
+                        8 - CS department</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <br>  
+   
+    </section>
+        <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;"><br><br>
+            <p style="color: #6c757d;">© 2023 Chamali Sandamini</p>
+        </footer> 
+    </section>
+    
+
+</body>
+
+</html>
+
+{% endblock body %}

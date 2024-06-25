@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block head %} 
+
+    <title>AirMapper Indoor</title>
+    
+{% endblock head %}
+
+{% block body %}
+<body>
+    <div>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Collapsed content</h4>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div>
+        <br>
+        <h1 style="text-align:center; font-size:80px;">AirMapper Indoor</h1>
+        <br>
+        <h6 b >LOCALIZATION OF UAVS
+            <br> IN INDOOR ENVIRONMENTS 
+            <br>WITH MACHINE LEARNING TECHNIQUES
+        </h6>
+    </div>
+
+    <br><br><br><br>
+    <div>
+        <h3 style="text-align:center; font-size:50px;">Location Prediction</h3>
+        <br><br>
+        <form action="/" method="POST" style="text-align:center; font-size:20px;">
+            RSSI 1: <input type="number" name="rssi1" style="margin-right: 20px;">
+            RSSI 2: <input type="number" name="rssi2" style="margin-right: 20px;">
+            RSSI 3: <input type="number" name="rssi3">
+            <br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+
+    <br><br><br>
+
+    
+    <a href="map.html" class="home-button">Floor Plan</a>
+
+    <br><br><br>
+
+    <br>  
+   
+    </section>
+        <footer style="background-color: #f2f2f2; padding: 20px; text-align: center;"><br><br>
+            <p style="color: #6c757d;">© 2023 Chamali Sandamini</p>
+        </footer> 
+    </section>
+    
+
+</body>
+
+</html>
+
+{% endblock body %}
